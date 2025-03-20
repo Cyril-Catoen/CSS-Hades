@@ -342,10 +342,27 @@ footer{
 
 @media screen and (max-width:450px){
 
+    header nav{
+        background: #cbc81c;
+    }
+
+    header img{
+        width: 35%;
+        top:2vh;
+    }
+
+    header nav ul{
+        width: 15%;
+        padding: 1vh auto;
+    }
+
+    header nav li{
+        background-color: rgb(53, 37, 37);
+    }
+
     .container, .container2{
         width:90%;
         margin:20px auto;
-        background-color: chartreuse;
     }
 
     .flex{
@@ -357,320 +374,100 @@ footer{
     }
 
     h2{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
         font-size: 2rem;
         text-align: center;
-        background-color: red;
+        background-color: black;
     }
 
-    #synopsis h2, #bonus h2{
-        margin-right: 2rem;
-    }
-
-    #personnages h2{
-        margin-left: 0rem;
-    }
-    
     h3{
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
         font-size: 3rem;
         color: red;
         text-align: center;
-    }
-
-    .fondRouge {
-        padding-top: 0;
-        padding-bottom: 0;
-        background-color: red;
     }
 
     /*header mobile*/
 
     header{
         height: 80vh;
-        background-image: url(../img/fondIphone.jpg);
-        background-position: top;
+        background-image: url(../img/zagreus2.png);
+        background-color: yellow;
+        background-position: bottom center;
         background-size: contain;
         background-repeat: no-repeat;
         position: relative;
     }
     
-    nav{
-        position: absolute;
-        bottom: -6.6vh;
-    }
-
-    header nav ul.container.flex li.li1{
-        display: none;
-    }
-
-    #mobile1{
-        display: flex;
-    }
-
-    header nav li, header nav li:nth-of-type(even){
-        width: 12%;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-    }
-
     /*body mobile*/
 
-    main li:nth-of-type(odd){
-        width: 12%;
-    }
+section#zagreus, section#hades, section#thanatos, section#megaera{
+        padding-top: 2vh;
+        padding-bottom: 0vh;
+}
 
-    main section.fondRouge ul.container2.flex li.li1, main section.fondRouge ul.container2.flex li.li2{
-        display: none;
-    }
+main section article{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    height: 80vh;
+}
 
-    #personnages2 div.w20{
-        width: 100%;
-    }
+section#hades article, section#thanatos article{
+    height: 70vh;
+}
 
-    #personnages2 figure.flex .w20 h3{
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-    }
+main section article div.w45{
+    margin-left: 5%;
+    margin-right: auto;
+}
 
-    #personnages2 div.w20:nth-child(4){ /* Sélectionne Juggernaut */
-        order: 2; /* Place Juggernaut en deuxième position */
-    }
+#zagreus article{
+    background-image: url(../img/zagreus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
 
-    #personnages2 div.w20:nth-child(1){ /* Sélectionne Deadpool */
-        order: 1; /* Place Deadpool e première position */
-    }
+#hades article{
+    background-image: url(../img/hades.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
 
-    #personnages2 div.w20:nth-child(2){ /* Sélectionne Cable */
-        order: 3; /* Place Cable en troisième position */
-    }
+#thanatos article{
+    background-image: url(../img/Thanatos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin: 0;
+    padding: 0;
+}
 
-    #personnages2 div.w20:nth-child(3){ /* Sélectionne Domino */
-        order: 4; /* Place Domini en dernière position */
-    }
+#zagreus article div.w45 p, #hades article div.w45 p, #thanatos article div.w45 p {
+    display: none;
+}
 
-    #personnages2 p{
-        display: none;
-    }
+#zagreus img, #hades img, #thanatos img{
+    display: none;
+}
 
-    main section.fondRouge#synopsis + section.container article.flex{
-        display: none; 
-    }
+#zagreus article div.w45, #hades article div.w45, #thanatos article div.w45 {
+    width: 90%;
+}
 
-    main #bonus2 h3, main section.fondVert{
-        display: none;
-    }
+#megaera img{
+    display: none;
+}
 
-    #bonus2 div.w30:nth-of-type(2){
-        width: 100%;
-    }
-
-    #bonus2 div.w30:nth-of-type(1), #bonus2 div.w30:nth-of-type(3){
-        width: 50%;
-    }
-
-    #bonus2 div.w30:nth-child(2){ 
-        order: 1;
-    }
-
-    #bonus2 div.w30:nth-child(1){ 
-        order: 3; 
-    }
-
-    #bonus2 div.w30:nth-child(3){ 
-        order: 2; /* Place en troisième position */
-    }
+#megaera div.w45{
+    width: 90%;
+    padding-bottom: 5vh;
+}
 
     /*footer mobile*/
-
-    footer div.container.flex{
-        display: flex;
-        justify-content: center;
-    }
-
-
-    footer div.container.flex div.w10{
+    footer{
         display: none;
-    }
-
-    footer div.container.flex div.w30{
-        width: 50%;
-    }
-
-
-}
-/* media query tablet */
-
-@media screen and (min-width:451px) and (max-width:900px){
-
-    .container{
-        width:85%;
-        margin:20px auto;
-        background-color: chartreuse;
-    }
-
-    .container2{
-        width:80%;
-        margin:20px auto;
-        background-color: chartreuse;
-    }
-
-    .flex{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        background-color: blue;
-    }
-
-    h2{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        font-size: 3rem;
-        text-align: center;
-        background-color: red;
-    }
-
-    #synopsis h2, #bonus h2{
-        margin-right: 2rem;
-    }
-
-    #personnages h2{
-        margin-left: 0rem;
-    }
-    
-    h3{
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-        font-size: 3rem;
-        color: red;
-        text-align: center;
-    }
-
-    .fondRouge {
-        padding-top: 0;
-        padding-bottom: 0;
-        background-color: red;
-    }
-
-    /*header tablet*/
-
-    header{
-        height: 70vh;
-        background-image: url(../img/fondIpad.jpg);
-        background-position: top;
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: relative;
-    }
-    
-    nav{
-        position: absolute;
-        bottom: -8vh;
-    }
-
-    header nav ul.container.flex{
-        width: 80%;
-    }
-
-    header nav ul.container.flex li.li1{
-        display: none;
-    }
-
-    #mobile1{
-        display: flex;
-        padding-left: 2rem;
-        width: 15%;
-    }
-
-    header nav li, header nav li:nth-of-type(even){
-        width: 12%;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-    }
-
-    /*body tablet*/
-
-    main li:nth-of-type(odd){
-        width: 12%;
-    }
-
-    main section.fondRouge ul.container2.flex li.li1{
-        display: none;
-    }
-
-    main section.container article.flex p, main section.container article.flex h3{
-        text-align: right;
-    }
-
-    #personnages2 div.w20{
-        width: 48%;
-    }
-
-    #personnages2 figure.flex .w20 h3{
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-    }
-
-    #personnages2 div.w20:nth-child(4){ /* Sélectionne Juggernaut */
-        order: 4; /* Place Juggernaut en deuxième position */
-    }
-
-    #personnages2 div.w20:nth-child(1){ /* Sélectionne Deadpool */
-        order: 1; /* Place Deadpool e première position */
-    }
-
-    #personnages2 div.w20:nth-child(2){ /* Sélectionne Cable */
-        order: 3; /* Place Cable en troisième position */
-    }
-
-    #personnages2 div.w20:nth-child(3){ /* Sélectionne Domino */
-        order: 2; /* Place Domini en dernière position */
-    }
-
-    #personnages2 p{
-        display: none;
-    }
-
-    main section.fondRouge#synopsis + section.container figure{
-        display: none; 
-    }
-
-    main #bonus2 h3:last-of-type, main section.fondVert{
-        display: none;
-    }
-
-    #bonus2 div.w30{
-        width: 100%;
-    }
-
-    #bonus2 div.w30:nth-child(2){ 
-        order: 3;
-    }
-
-    #bonus2 div.w30:nth-child(1){ 
-        order: 1; 
-    }
-
-    #bonus2 div.w30:nth-child(3){ 
-        order: 2; 
-    }
-
-    /*footer tablet*/
-
-    footer div.container.flex{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        width: 85%;
-    }
-
-    footer div.container.flex div.w10{
-        width: 15%;
-    }
-
-    footer div.container.flex div.w30{
-        width: 50%;
     }
 }
