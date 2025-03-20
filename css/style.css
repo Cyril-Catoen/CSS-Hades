@@ -69,10 +69,11 @@ p{
 /* header */
 
 header{
+    width: 100%;
     height: 100vh;
     background-image: url(../img/wall.jpg);
     background-position: top center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -331,8 +332,8 @@ footer{
     height: 100vh;
     background-image: url(../img/fond2.jpeg);
     background-position: top;
-    background-size: contain;
-    background-repeat: no repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
